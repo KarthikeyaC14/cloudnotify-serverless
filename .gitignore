@@ -1,0 +1,21 @@
+
+# AWS credentials and local configuration
+.aws/
+.env
+.env.*
+!.env.example
+.aws-sam/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Operating system files
+.DS_Store
+
+# Logs and temporary files
+*.log
+tmp/
+
