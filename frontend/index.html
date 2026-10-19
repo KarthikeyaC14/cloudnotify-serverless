@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CloudNotify — a serverless email and SMS notification platform.">
+  <title>CloudNotify | Notification Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">C</span>
+      CloudNotify
+    </a>
+    <span class="status"><span class="status-dot"></span> Notification Center</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">SERVERLESS NOTIFICATION PLATFORM</p>
+      <h1>Every message.<br><span>Delivered smarter.</span></h1>
+      <p class="hero-description">
+        Send email and SMS notifications through one simple interface.
+        Reliable workflows, clear feedback, and cloud-powered delivery.
+      </p>
+    </section>
+
+    <section class="form-card">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow">GET STARTED</p>
+          <h2>Create a notification</h2>
+        </div>
+        <span class="step-label">STEP 01</span>
+      </div>
+
+      <form id="notification-form">
+        <label for="recipient-name">Recipient name</label>
+        <input id="recipient-name" name="recipientName" type="text"
+          placeholder="Enter recipient name" required maxlength="100">
+
+        <label for="channel">Notification channel</label>
+        <select id="channel" name="channel" required>
+          <option value="email">Email</option>
+          <option value="sms">SMS</option>
+        </select>
+
+        <label for="destination">Recipient email or phone number</label>
+        <input id="destination" name="destination" type="text"
+          placeholder="Enter email address" required maxlength="254">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"
+          placeholder="Write your notification message..." required
+          maxlength="1000" rows="5"></textarea>
+
+        <div class="form-footer">
+          <span id="character-count">0 / 1000 characters</span>
+          <button type="submit">Prepare notification <span>→</span></button>
+        </div>
+
+        <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <span class="info-number">01</span>
+        <h3>Secure processing</h3>
+        <p>Requests will be validated by our backend before processing.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-number">02</span>
+        <h3>Cloud workflow</h3>
+        <p>AWS services will coordinate and handle notification delivery.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-number">03</span>
+        <h3>Observable delivery</h3>
+        <p>Logging and monitoring will help us understand application behavior.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>CloudNotify · Built with AWS serverless services</p>
+      <p>Development version · Notifications are not sent yet</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
